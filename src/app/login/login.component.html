@@ -1,0 +1,2171 @@
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>eCommerce </title>
+        <meta name="description" content="eCommerce">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <!-- all css here 
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/chosen.min.css">
+        <link rel="stylesheet" href="assets/css/icofont.css">
+        <link rel="stylesheet" href="assets/css/themify-icons.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+        <link rel="stylesheet" href="assets/css/bundle.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  
+  <style>
+      
+        .navbar {
+          margin-bottom: 0;
+          background-color: #2d2d30;
+          border: 0;
+          font-size: 11px !important;
+          letter-spacing: 4px;
+          opacity: 0.9;
+        }
+        .navbar li a, .navbar .navbar-brand { 
+          color: #d5d5d5 !important;
+        }
+        .navbar-nav li a:hover {
+          color: #fff !important;
+        }
+        .navbar-nav li.active a {
+          color: #fff !important;
+          background-color: #29292c !important;
+        }
+        .navbar-default .navbar-toggle {
+          border-color: transparent;
+        }
+        .open .dropdown-toggle {
+          color: #fff;
+          background-color: #555 !important;
+        }
+        .dropdown-menu li a {
+          color: #000 !important;
+        }
+        .dropdown-menu li a:hover {
+          background-color: #5bc0de !important;
+        }
+
+        .modal-header {
+    background-color: #5bc0de;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-footer {
+    background-color: #5bc0de;
+    
+  }
+
+        </style>
+      </head>
+      <body>
+
+           
+           
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog cascading-modal" role="document">
+          <!--Content-->
+          <div class="modal-content">
+
+             <!--Header-->
+      <div class="modal-header">            
+            <i class="fa fa-motorcycle fa-spin fa-3x" style="color:black;"></i>           
+          </div>
+      
+            <!--Modal cascading tabs-->
+            <div class="modal-c-tabs">
+      
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab">
+                        <a href="#">
+                                <span class="glyphicon glyphicon-user"></span>
+                              </a>                        
+                    Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#panel8" role="tab">
+                        <a href="#">
+                                <span class="glyphicon glyphicon-user"></span><span class="glyphicon glyphicon-plus"></span>
+                              </a>
+                    Register</a>
+                </li>
+              </ul>
+      
+              <!-- Tab panels -->
+              <div class="tab-content" style="background-image: url(assets/img/slider/slider-bg.jpg);background-color: rgba(0,0,0,0.1);">
+                <!--Panel 7-->
+                <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+                        <div class="d-flex justify-content-center h-100">
+                                <div class="card">
+                                    <div class="card-header">
+                                            <div class="d-flex justify-content-end social_icon">
+                                                <a class="blue-text">Login With</a><span>&nbsp;</span>
+                                                    <span><i class="icofont icofont-social-facebook"></i></span><span>&nbsp;</span>
+                                                    <span><i class="fab fa-google-plus-square"></i></span><span>&nbsp;</span>                                                    
+                                                </div>
+                                                
+                                        </div>
+                       <div class="card-body">
+                        <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="username">
+                                
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
+                                <input type="password" class="form-control" placeholder="password">
+                            </div>
+                            <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                            <button class="btn btn-info">Log in <span class="glyphicon glyphicon-user"></span></button>
+                                    </div>
+                                    <div class="options text-center text-md-right mt-1">
+                                            <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                                            <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                                          </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+      
+                  <!--Body-->
+                 <!-- <div class="modal-body mb-1">
+                    <div class="md-form form-sm mb-5">
+                            <a href="#">
+                                    <span class="glyphicon glyphicon-envelope"></span>
+                                  </a>
+                      <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                      <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                    </div>
+                    <br/>
+                    <div class="md-form form-sm mb-4">
+                            <a href="#">
+                                    <span class="glyphicon glyphicon-lock"></span>
+                                  </a>
+                      <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                      <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                    </div>
+                    <div class="text-center mt-2">
+                      <button class="btn btn-info">Log in <span class="glyphicon glyphicon-user"></span></button>
+                    </div>
+                  </div>-->
+                  <!--Footer-->
+                  <div class="modal-footer">
+                    <!--<div class="options text-center text-md-right mt-1">
+                      <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                      <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                    </div>
+                    <div class="">
+                            <button class="btn btn-info">Log in <span class="glyphicon glyphicon-user"></span></button>
+                          </div>-->
+                  </div>
+      
+                </div>
+                <!--/.Panel 7-->
+      
+                <!--Panel 8-->
+                <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+                        <div class="d-flex justify-content-center h-100">
+                                <div class="card">
+                                    <div class="card-header">
+                                          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%281%29.jpg" alt="avatar" height="5px" width="250px"  class="rounded-circle img-responsive"> 
+                                        </div>
+                       <div class="card-body">
+                        <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="username">
+                                
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
+                                <input type="password" class="form-control" placeholder="password">
+                            </div>
+                            <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                    </div>
+                                    <input type="password" class="form-control" placeholder="confirm password">
+                                </div>
+                                <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                        </div>
+                                        <input type="e-mail" class="form-control" placeholder="email">
+                                    </div>
+                                    <div class="input-group form-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fas fa-pen"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Buyer/Seller">
+                                            
+                                        </div>
+                            <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                            <button class="btn btn-info">Sign up <span class="glyphicon glyphicon-user"></span><span class="glyphicon glyphicon-plus"></span></button>
+                                    </div>
+                                    <div class="options text-center text-md-right mt-1">
+                                            <p>Already have an account? <a href="#" class="blue-text">Log in</a></p>                                            
+                                          </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+      
+                  <!--Body-->
+                 <!-- <div class="modal-body">
+                    <div class="md-form form-sm mb-5">
+                            <a href="#">
+                                    <span class="glyphicon glyphicon-envelope"></span>
+                                  </a>
+                      <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                      <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                    </div>
+      
+                    <div class="md-form form-sm mb-5">
+                            <a href="#">
+                                    <span class="glyphicon glyphicon-lock"></span>
+                                  </a>
+                      <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                      <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+                    </div>
+      
+                    <div class="md-form form-sm mb-4">
+                            <a href="#">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                  </a>
+                      <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                      <label data-error="wrong" data-success="right" for="modalLRInput14">Confirm password</label>
+                    </div>
+      
+                    <div class="text-center form-sm mt-2">
+                      <button class="btn btn-info">Sign up <span class="glyphicon glyphicon-user"></span><span class="glyphicon glyphicon-plus"></span></button>
+                    </div>
+      
+                  </div>-->
+                  <!--Footer-->
+                  <div class="modal-footer">
+                    <!--<div class="options text-right">
+                      <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                    </div>
+                    <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>-->
+                  </div>
+                </div>
+                <!--/.Panel 8-->
+              </div>
+      
+            </div>
+          </div>
+          <!--/.Content-->
+        </div>
+      </div>
+      <!--Modal: Login / Register Form-->
+      
+                 
+
+            <nav class="navbar navbar-default navbar-fixed-top ptb-10 mtb-0 pl-0 ml-0">
+                    <a class="col-lg-4 col-md-4 col-4 pl-10 ml-0" href="index.html">
+                            <i class="fa fa-motorcycle fa-7x" style="color:#269abc;"></i>                            
+
+                      <!--  <img alt="" src="assets/img/icon-img/bike.png">--></a> 
+                    <div class="col-lg-2 col-md-2 col-2">
+                            <!--  <div class="header-contact">
+                                    <p align="right"><a href="#">shop</a></p>
+                                </div> -->
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-2">
+                            <!--<div class="header-contact">
+                                    <p align="right"><a href="#">product details</a></p>
+                                </div>-->
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-2">
+                            <!--<div class="header-contact">
+                                    <p align="right"><a href="#">wishlist</a></p>
+                                </div>-->
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-2">
+                            <div class="pl-35 pt-0">
+                                    <div class="header-contact">     
+                                                                                <!-- #myModal  -->   
+                                            <p><a href="#" class="btn btn-info " data-toggle="modal" data-target="#modalLRForm">
+                                                    <span class="glyphicon glyphicon-user"></span>LOGIN 
+                                                </a></p>
+                                                
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="myNavbar">
+                                            <ul class="nav navbar-nav navbar-right">
+                                              
+                                                    <li class="dropdown">
+                                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img class="s-open" alt="" src="assets/img/icon-img/menu.png">
+                                                            <span class="caret"></span></a>
+                                                            <ul class="dropdown-menu">
+                                                              <li> <i class="fa fa-motorcycle " style="color:#269abc;"><a routerLink = "register">Register</a></i></li>
+                                                              <li><i class="fa fa-motorcycle " style="color:#212324;"><a routerLink = "shop">Shop</a></i></li>                                                              
+                                                              <li><i class="fa fa-motorcycle " style="color:#269abc;"><a routerLink="product-details">Product details</a></i></li>
+                                                              <li><i class="fa fa-motorcycle " style="color:#212324;"><a routerLink="checkout">Checkout</a></i></li>
+                                                              <li><i class="fa fa-motorcycle " style="color:#269abc;"><a routerLink="wishlist">Wishlist</a></i></li>
+                                                              <li><i class="fa fa-motorcycle " style="color:#212324;"><a routerLink="cart">Cart</a></i></li>
+                                                              <li><i class="fa fa-motorcycle " style="color:#269abc;"><a routerLink="blog">Blog</a></i></li>
+                                                              <li><i class="fa fa-motorcycle " style="color:#212324;"><a routerLink="blog-details">Blog Details</a></i></li>
+                                                              <li><i class="fa fa-motorcycle " style="color:#269abc;"><a routerLink="about_us">About Us</a></i></li>
+                                                              <li><i class="fa fa-motorcycle " style="color:#212324;"><a routerLink="contact">Contact</a></i></li>
+
+                                                              
+                                                            </ul>
+                                                          </li>
+                                             
+                                            </ul>
+                                          </div>
+                                          
+                                </div>
+                    </div>
+                    
+                        </nav> 
+                   <!--  <div class="container-fluid">
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>                        
+                        </button>
+                        <a class="navbar-brand" align="left" href="#">Logo</a>
+                      </div>
+                      <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                          <li><a href="#myPage">HOME</a></li>
+                          <li><a href="#band">BAND</a></li>
+                          <li><a href="#tour">TOUR</a></li>
+                          <li><a href="#contact">CONTACT</a></li>
+                          <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Merchandise</a></li>
+                              <li><a href="#">Extras</a></li>
+                              <li><a href="#">Media</a></li> 
+                            </ul>
+                          </li>
+                          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                        </ul>
+                      </div>
+                    </div> -->
+                  
+            
+          <div class="wrapper">                
+              <!-- header start -->
+               <!-- <header>
+                  <div class="header-area transparent-bar ptb-55">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-4 col-md-4 col-4">
+                                  <div class="logo-small-device">
+                                      <a href="index.html"><img alt="" src="assets/img/logo/logo.gif"></a>
+                                  </div>
+                              </div>
+                              <div class="col-lg-8 col-md-8 col-8">
+                                  <div class="header-contact-menu-wrapper pl-45">
+                                      <div class="header-contact">
+                                          <p>WANNA DRIVE A TEST RIDE? CALL US AT TOLL FREE +9999999999</p>
+                                      </div>
+                                      <div class="menu-wrapper text-center">
+                                          <button class="menu-toggle">
+                                              <img class="s-open" alt="" src="assets/img/icon-img/menu.png">
+                                              <img class="s-close" alt="" src="assets/img/icon-img/menu-close.png">
+                                          </button>
+                                          <div class="main-menu">
+                                              <nav>
+                                                  <ul>
+                                                      <li><a href="index.html">home</a></li>
+                                                      <li class="active"><a href="#">about us </a></li>
+                                                      <li><a href="#">shop</a>
+                                                          <ul>
+                                                              <li><a href="#">shop</a></li>
+                                                              <li><a href="#">product details</a></li>
+                                                              <li><a href="#">checkout</a></li>
+                                                              <li><a href="#">wishlist</a></li>
+                                                              <li><a href="#">cart</a></li>
+                                                          </ul>
+                                                      </li>
+                                                      <li><a href="#">pages</a>
+                                                          <ul>
+                                                              <li><a href="#">about us</a></li>
+                                                              <li><a href="#">cart page</a></li>
+                                                              <li><a href="#">checkout</a></li>
+                                                              <li><a href="#">wishlist</a></li>
+                                                              <li><a href="#">login</a></li>
+                                                              <li><a href="#">contact</a></li>
+                                                          </ul>
+                                                      </li>
+                                                      <li><a href="#">blog</a>
+                                                          <ul>
+                                                              <li><a href="#">blog</a></li>
+                                                              <li><a href="#">blog details</a></li>
+                                                          </ul>
+                                                      </li>
+                                                      <li><a href="#">contact us</a></li>
+                                                  </ul>
+                                              </nav>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="header-cart cart-small-device">
+                                      <button class="icon-cart">
+                                          <i class="ti-shopping-cart"></i>
+                                          <span class="count-style">02</span>
+                                          <span class="count-price-add"> INR 295.95</span>
+                                      </button>
+                                      <div class="shopping-cart-content">
+                                          <ul>
+                                              <li class="single-shopping-cart">
+                                                  <div class="shopping-cart-img">
+                                                      <a href="#"><img alt="" src="assets/img/cart/cart-1.jpg"></a>
+                                                  </div>
+                                                  <div class="shopping-cart-title">
+                                                      <h3><a href="#">Gloriori GSX 250 R </a></h3>
+                                                      <span>Price: INR 275</span>
+                                                      <span>Qty: 01</span>
+                                                  </div>
+                                                  <div class="shopping-cart-delete">
+                                                      <a href="#"><i class="icofont icofont-ui-delete"></i></a>
+                                                  </div>
+                                              </li>
+                                              <li class="single-shopping-cart">
+                                                  <div class="shopping-cart-img">
+                                                      <a href="#"><img alt="" src="assets/img/cart/cart-2.jpg"></a>
+                                                  </div>
+                                                  <div class="shopping-cart-title">
+                                                      <h3><a href="#">Demonissi Gori</a></h3>
+                                                      <span>Price: INR 275</span>
+                                                      <span class="qty">Qty: 01</span>
+                                                  </div>
+                                                  <div class="shopping-cart-delete">
+                                                      <a href="#"><i class="icofont icofont-ui-delete"></i></a>
+                                                  </div>
+                                              </li>
+                                              <li class="single-shopping-cart">
+                                                  <div class="shopping-cart-img">
+                                                      <a href="#"><img alt="" src="assets/img/cart/cart-3.jpg"></a>
+                                                  </div>
+                                                  <div class="shopping-cart-title">
+                                                      <h3><a href="#">Demonissi Gori</a></h3>
+                                                      <span>Price: INR 275</span>
+                                                      <span class="qty">Qty: 01</span>
+                                                  </div>
+                                                  <div class="shopping-cart-delete">
+                                                      <a href="#"><i class="icofont icofont-ui-delete"></i></a>
+                                                  </div>
+                                              </li>
+                                          </ul>
+                                          <div class="shopping-cart-total">
+                                              <h4>total: <span>INR 550.00</span></h4>
+                                          </div>
+                                          <div class="shopping-cart-btn">
+                                              <a class="btn-style cr-btn" href="#">checkout</a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="mobile-menu-area col-12">
+                                  <div class="mobile-menu">
+                                      <nav id="mobile-menu-active">
+                                          <ul class="menu-overflow">
+                                              <li><a href="index.html">HOME</a></li>
+                                              <li><a href="#">pages</a>
+                                                  <ul>
+                                                      <li><a href="#">about us</a></li>
+                                                      <li><a href="#">cart page</a></li>
+                                                      <li><a href="#">checkout</a></li>
+                                                      <li><a href="#">wishlist</a></li>
+                                                      <li><a href="#">login</a></li>
+                                                      <li><a href="#">contact</a></li>
+                                                  </ul>
+                                              </li>
+                                              <li><a href="#">shop</a>
+                                                  <ul>
+                                                      <li><a href="#">shop</a></li>
+                                                      <li><a href="#">product details</a></li>
+                                                      <li><a href="#">checkout</a></li>
+                                                      <li><a href="#">wishlist</a></li>
+                                                      <li><a href="#">cart</a></li>
+                                                  </ul>
+                                              </li>
+                                              <li><a href="#">BLOG</a>
+                                                  <ul>
+                                                      <li><a href="#">blog page</a></li>
+                                                      <li><a href="#">blog details</a></li>
+                                                  </ul>
+                                              </li>
+                                              <li><a href="#"> Contact us</a></li>
+                                          </ul>
+                                      </nav>							
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="header-cart-wrapper">
+                          <div class="header-cart">
+                              <button class="icon-cart">
+                                  <i class="ti-shopping-cart"></i>
+                                  <span class="count-style">02</span>
+                                  <span class="count-price-add">INR 295.95</span>
+                              </button>
+                              <div class="shopping-cart-content">
+                                  <ul>
+                                      <li class="single-shopping-cart">
+                                          <div class="shopping-cart-img">
+                                              <a href="#"><img alt="" src="assets/img/cart/cart-1.jpg"></a>
+                                          </div>
+                                          <div class="shopping-cart-title">
+                                              <h3><a href="#">Gloriori GSX 250 R </a></h3>
+                                              <span>Price: INR 275</span>
+                                              <span>Qty: 01</span>
+                                          </div>
+                                          <div class="shopping-cart-delete">
+                                              <a href="#"><i class="icofont icofont-ui-delete"></i></a>
+                                          </div>
+                                      </li>
+                                      <li class="single-shopping-cart">
+                                          <div class="shopping-cart-img">
+                                              <a href="#"><img alt="" src="assets/img/cart/cart-2.jpg"></a>
+                                          </div>
+                                          <div class="shopping-cart-title">
+                                              <h3><a href="#">Demonissi Gori</a></h3>
+                                              <span>Price: INR 275</span>
+                                              <span class="qty">Qty: 01</span>
+                                          </div>
+                                          <div class="shopping-cart-delete">
+                                              <a href="#"><i class="icofont icofont-ui-delete"></i></a>
+                                          </div>
+                                      </li>
+                                      <li class="single-shopping-cart">
+                                          <div class="shopping-cart-img">
+                                              <a href="#"><img alt="" src="assets/img/cart/cart-3.jpg"></a>
+                                          </div>
+                                          <div class="shopping-cart-title">
+                                              <h3><a href="#">Demonissi Gori</a></h3>
+                                              <span>Price: INR 275</span>
+                                              <span class="qty">Qty: 01</span>
+                                          </div>
+                                          <div class="shopping-cart-delete">
+                                              <a href="#"><i class="icofont icofont-ui-delete"></i></a>
+                                          </div>
+                                      </li>
+                                  </ul>
+                                  <div class="shopping-cart-total">
+                                      <h4>total: <span>INR 550.00</span></h4>
+                                  </div>
+                                  <div class="shopping-cart-btn">
+                                      <a class="btn-style cr-btn" href="#">checkout</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>	
+                </header> -->
+    <!-- header Ends -->
+
+        
+    <div id="myCarousel" class="carousel slide pt-30 mt-30" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner pt-60 mt-60" style="background-image: url(assets/img/slider/slider-bg.jpg)">
+          <div class="item active">
+            <img src="assets/img/slider/bike-1.png" alt="Chania">
+            <div class="carousel-caption">
+              <img class="animated" src="assets/img/icon-img/bike.png" alt="slider images" style="padding-left: 500px">
+              <p style="padding-left: 500px" >BOOK YOUR BIKE INSTANTLY AND ENJOY DISCOUNT!</p>
+            </div>
+            
+          </div>
+      
+          <div class="item">
+            <img src="assets/img/slider/bike-2.png" alt="Chicago">
+            <div class="carousel-caption">
+                <img class="animated" src="assets/img/icon-img/bike.png" alt="slider images" style="padding-left: 500px">
+                <p style="padding-left: 500px">BOOK YOUR BIKE INSTANTLY AND ENJOY DISCOUNT!</p>
+            </div>
+          </div>
+      
+          <div class="item">
+            <img src="assets/img/slider/bike-1.png" alt="New York">
+            <div class="carousel-caption">
+                <img class="animated" src="assets/img/icon-img/bike.png" alt="slider images" style="padding-left: 500px">
+                <p style="padding-left: 500px">BOOK YOUR BIKE INSTANTLY AND ENJOY DISCOUNT!</p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="slider-social">
+        <ul style="padding-left: 1050px">
+            <li class="facebook"><a href="#"><i class="icofont icofont-social-facebook"></i></a></li>
+            <li class="twitter"><a href="#"><i class="icofont icofont-social-twitter"></i></a></li>
+            <li class="pinterest"><a href="#"><i class="icofont icofont-social-pinterest"></i></a></li>
+        </ul>
+    </div>
+
+<!-- Left and right controls -->
+    <div class="slider-area">
+                  <div class="slider-active owl-carousel">
+                      <!--<div class="single-slider slider-1" style="background-image: url(assets/img/slider/slider-bg.jpg)">
+                          <div class="container">
+                             <div class="slider-content slider-animated-1">
+                                   <div class="slider-img text-center">
+                                      <img class="animated" src="assets/img/slider/bike-1.png" alt="slider images">
+                                  </div>
+                                  <div class="slider-text-img">
+                                      <h6 class="animated">BOOK YOUR BIKE INSTANTLY AND ENJOY DISCOUNT</h6>
+                                      <img class="animated" src="assets/img/icon-img/bike.png" alt="slider images">
+                                  </div>
+                                  <h2 class="animated">MOTORCYCLE</h2>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="single-slider slider-1" style="background-image: url(assets/img/slider/slider-bg.jpg)">
+                          <div class="container">
+                              <div class="slider-content slider-animated-1">
+                                   <div class="slider-img text-center">
+                                      <img class="animated" src="assets/img/slider/bike-2.png" alt="slider images">
+                                  </div>
+                                  <div class="slider-text-img">
+                                      <h6 class="animated">BOOK YOUR BIKE INSTANTLY AND ENJOY DISCOUNT</h6>
+                                      <img class="animated" src="assets/img/icon-img/bike.png" alt="slider images">
+                                  </div>
+                                  <h2 class="animated">MOTORCYCLE</h2>
+                              </div>
+                          </div>
+                      </div>-->
+                      <div class="single-slider slider-1" style="background-image: url(assets/img/slider/slider-bg.jpg)">
+                          <div class="container">
+                              <div class="slider-content slider-animated-1">
+                                  <!--<div class="slider-img text-center">
+                                      <img class="animated" src="assets/img/slider/bike-1.png" alt="slider images">
+                                  </div>-->
+                                  <div class="slider-text-img">
+                                      <h6 class="animated">ENJOY GREAT OFFERS THIS FESTIVE SEASON</h6>
+                                      <img class="animated" src="assets/img/icon-img/bike.png" alt="slider images">
+                                  </div>
+                                  <h2 class="animated">MOTORCYCLE</h2>
+                              </div>
+                          </div>
+                      </div>
+                  </div> <!-- End of div slider-area -->
+          
+         <!-- <div class="slider-social">
+                      <ul>
+                          <li class="facebook"><a href="#"><i class="icofont icofont-social-facebook"></i></a></li>
+                          <li class="twitter"><a href="#"><i class="icofont icofont-social-twitter"></i></a></li>
+                          <li class="pinterest"><a href="#"><i class="icofont icofont-social-pinterest"></i></a></li>
+                      </ul>
+                  </div>
+                  <div class="language-currency-wrapper">
+                      <div class="language-currency">
+                          <div class="language">
+                              <select class="select-header orderby">
+                                  <option value="">ENG</option>
+                                  <option value="">BANGLA </option>
+                                  <option value="">HINDI</option>
+                              </select>
+                          </div>
+                          <div class="currency">
+                              <select class="select-header orderby">
+                                  <option value="">$USD</option>
+                                  <option value="">US </option>
+                                  <option value="">EURO</option>
+                              </select>
+                          </div>
+                      </div>
+                  </div>-->
+              </div> <!-- End of div slider-social -->
+        
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="assets/img/animate/animate-3.gif"  height="500" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="assets/img/animate/animate-2.gif"  height="500" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="assets/img/animate/animate-1.gif"  height="500" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div> <!-- End of div carouselExampleIndicators -->
+        
+        <div class="overview-area pt-135">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-6 col-md-12">
+                              <div class="overview-content">
+                                  <h1><span>ROADIES</span> WORLD MOST </h1>
+                                  <h2>LATGEST <span>MOTORCYCLE STORE</span></h2>
+                                  <p><span>ROADIES</span> the most latgest bike store in the wold can serve you latest            quality of motorcycle also you can sell here your motorcycle , spare parts, accessories etc both new and old, first hand as well as second hand </p>
+                                  <div class="question-area">
+                                      <h4>HAVE ANY QUESTION? </h4>
+                                      <div class="question-contact">
+                                          <div class="question-icon">
+                                              <i class="icofont icofont-phone"></i>
+                                          </div>
+                                          <div class="question-content-number">
+                                              <h6> 9999999999</h6>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-6 col-md-12">
+                              <div class="overview-img">
+                                  <img class="tilter" src="assets/img/banner/banner-1.png" alt="">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div> <!-- End of div overview-area pt-135 -->
+        
+        <div class="banner-area pt-135 pb-120">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-4 col-lg-4">
+                              <div class="banner-wrapper mb-30">
+                                  <a href="#"><img src="assets/img/banner/banner-1.jpg" alt="image"></a>
+                                  <div class="banner-content">
+                                      <h2>BUY NEW BIKE</h2>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-lg-4">
+                              <div class="banner-wrapper mb-30">
+                                  <a href="#"><img src="assets/img/banner/banner-2.jpg" alt="image"></a>
+                                  <div class="banner-content">
+                                      <h2>SELL YOUR BIKE</h2>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-lg-4">
+                              <div class="banner-wrapper mb-30">
+                                  <a href="#"><img src="assets/img/banner/banner-3.jpg" alt="image"></a>
+                                  <div class="banner-content">
+                                      <h2>FIND SPARE PARTS</h2>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div> <!-- End of div banner-area pt-135 pb-120 -->
+        
+        <div class="product-area pb-190">
+                  <div class="container">
+                      <div class="section-title text-center mb-50">
+                          <h2>CHOOSE YOUR BIKE</h2>
+                          <p><span>ROADIES</span> the most latgest bike store in the wold can serve you latest            qulaity of motorcycle also you can sell here your motorcycle</p>
+                      </div>
+                      <div class="product-tab-list text-center mb-80 nav product-menu-mrg" role="tablist">
+                          <a class="active" href="#home1" data-toggle="tab" >
+                              <h4>NEW BIKES </h4>
+                          </a>
+                          <a href="#home2" data-toggle="tab">
+                              <h4> USED BIKES </h4>
+                          </a>
+                      </div>
+
+                      <div class="container text-center pt-5">
+                            
+                            <div class="row">
+                              <div class="col-sm-4">
+                                
+                                <div class="product-wrapper-bundle">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#">
+                                                    <img src="assets/img/product/product-1.jpg" alt="">
+                                                </a>
+                                                <div class="product-item-dec">
+                                                    <ul>
+                                                        <li>2019</li>
+                                                        <li>MANUAL</li>
+                                                        <li>PETROL</li>
+                                                        <li>250 CC</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-action">
+                                                    <a class="action-plus-2" title="Add To Cart" href="#">
+                                                        <i class=" ti-shopping-cart"></i>
+                                                    </a>
+                                                    <a class="action-cart-2" title="Wishlist" href="#">
+                                                        <i class=" ti-heart"></i>
+                                                    </a>
+                                                    <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                        <i class=" ti-zoom-in"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="product-content-wrapper">
+                                                    <div class="product-title-spreed">
+                                                        <h4><a href="#">Gloriori GSX 250 R</a></h4>
+                                                        <span>6600 RPM</span>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span>INR 2549</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                              </div>
+                              <div class="col-sm-4">
+                                    <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#">
+                                                    <img src="assets/img/product/product-4.jpg" alt="">
+                                                </a>
+                                                <div class="product-item-dec">
+                                                    <ul>
+                                                        <li>2019</li>
+                                                        <li>MANUAL</li>
+                                                        <li>PETROL</li>
+                                                        <li>480 CC</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-action">
+                                                    <a class="action-plus-2" title="Add To Cart" href="#">
+                                                        <i class=" ti-shopping-cart"></i>
+                                                    </a>
+                                                    <a class="action-cart-2" title="Wishlist" href="#">
+                                                        <i class=" ti-heart"></i>
+                                                    </a>
+                                                    <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                        <i class=" ti-zoom-in"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="product-content-wrapper">
+                                                    <div class="product-title-spreed">
+                                                        <h4><a href="#">Demonissi Gori</a></h4>
+                                                        <span>6700 RPM</span>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span>INR 2549</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                              </div>
+                              <div class="col-sm-4">
+                                    <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#">
+                                                    <img src="assets/img/product/product-2.jpg" alt="">
+                                                </a>
+                                                <div class="product-item-dec">
+                                                    <ul>
+                                                        <li>2019</li>
+                                                        <li>MANUAL</li>
+                                                        <li>PETROL</li>
+                                                        <li>200 CC</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-action">
+                                                    <a class="action-plus-2" title="Add To Cart" href="#">
+                                                        <i class=" ti-shopping-cart"></i>
+                                                    </a>
+                                                    <a class="action-cart-2" title="Wishlist" href="#">
+                                                        <i class=" ti-heart"></i>
+                                                    </a>
+                                                    <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                        <i class=" ti-zoom-in"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="product-content-wrapper">
+                                                    <div class="product-title-spreed">
+                                                        <h4><a href="#">Klager GSX 250 R</a></h4>
+                                                        <span>5500 RPM</span>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span>INR 2549</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+
+                      <!--<div class="tab-content jump">
+                          <div class="tab-pane active" id="home1">
+                              <div class="product-slider-active owl-carousel">
+                                  <div class="product-wrapper-bundle">
+                                      <div class="product-wrapper">
+                                          <div class="product-img">
+                                              <a href="#">
+                                                  <img src="assets/img/product/product-1.jpg" alt="">
+                                              </a>
+                                              <div class="product-item-dec">
+                                                  <ul>
+                                                      <li>2019</li>
+                                                      <li>MANUAL</li>
+                                                      <li>PETROL</li>
+                                                      <li>250 CC</li>
+                                                  </ul>
+                                              </div>
+                                              <div class="product-action">
+                                                  <a class="action-plus-2" title="Add To Cart" href="#">
+                                                      <i class=" ti-shopping-cart"></i>
+                                                  </a>
+                                                  <a class="action-cart-2" title="Wishlist" href="#">
+                                                      <i class=" ti-heart"></i>
+                                                  </a>
+                                                  <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                      <i class=" ti-zoom-in"></i>
+                                                  </a>
+                                              </div>
+                                              <div class="product-content-wrapper">
+                                                  <div class="product-title-spreed">
+                                                      <h4><a href="#">Gloriori GSX 250 R</a></h4>
+                                                      <span>6600 RPM</span>
+                                                  </div>
+                                                  <div class="product-price">
+                                                      <span>INR 2549</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="product-wrapper">
+                                          <div class="product-img">
+                                              <a href="#">
+                                                  <img src="assets/img/product/product-4.jpg" alt="">
+                                              </a>
+                                              <div class="product-item-dec">
+                                                  <ul>
+                                                      <li>2019</li>
+                                                      <li>MANUAL</li>
+                                                      <li>PETROL</li>
+                                                      <li>480 CC</li>
+                                                  </ul>
+                                              </div>
+                                              <div class="product-action">
+                                                  <a class="action-plus-2" title="Add To Cart" href="#">
+                                                      <i class=" ti-shopping-cart"></i>
+                                                  </a>
+                                                  <a class="action-cart-2" title="Wishlist" href="#">
+                                                      <i class=" ti-heart"></i>
+                                                  </a>
+                                                  <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                      <i class=" ti-zoom-in"></i>
+                                                  </a>
+                                              </div>
+                                              <div class="product-content-wrapper">
+                                                  <div class="product-title-spreed">
+                                                      <h4><a href="#">Demonissi Gori</a></h4>
+                                                      <span>6700 RPM</span>
+                                                  </div>
+                                                  <div class="product-price">
+                                                      <span>INR 2549</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="product-wrapper-bundle">
+                                      <div class="product-wrapper">
+                                          <div class="product-img">
+                                              <a href="#">
+                                                  <img src="assets/img/product/product-2.jpg" alt="">
+                                              </a>
+                                              <div class="product-item-dec">
+                                                  <ul>
+                                                      <li>2019</li>
+                                                      <li>MANUAL</li>
+                                                      <li>PETROL</li>
+                                                      <li>200 CC</li>
+                                                  </ul>
+                                              </div>
+                                              <div class="product-action">
+                                                  <a class="action-plus-2" title="Add To Cart" href="#">
+                                                      <i class=" ti-shopping-cart"></i>
+                                                  </a>
+                                                  <a class="action-cart-2" title="Wishlist" href="#">
+                                                      <i class=" ti-heart"></i>
+                                                  </a>
+                                                  <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                      <i class=" ti-zoom-in"></i>
+                                                  </a>
+                                              </div>
+                                              <div class="product-content-wrapper">
+                                                  <div class="product-title-spreed">
+                                                      <h4><a href="#">Klager GSX 250 R</a></h4>
+                                                      <span>5500 RPM</span>
+                                                  </div>
+                                                  <div class="product-price">
+                                                      <span>INR 2549</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="product-wrapper">
+                                          <div class="product-img">
+                                              <a href="#">
+                                                  <img src="assets/img/product/product-5.jpg" alt="">
+                                              </a>
+                                              <div class="product-item-dec">
+                                                  <ul>
+                                                      <li>2019</li>
+                                                      <li>MANUAL</li>
+                                                      <li>PETROL</li>
+                                                      <li>150 CC</li>
+                                                  </ul>
+                                              </div>
+                                              <div class="product-action">
+                                                  <a class="action-plus-2" title="Add To Cart" href="#">
+                                                      <i class=" ti-shopping-cart"></i>
+                                                  </a>
+                                                  <a class="action-cart-2" title="Wishlist" href="#">
+                                                      <i class=" ti-heart"></i>
+                                                  </a>
+                                                  <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                      <i class=" ti-zoom-in"></i>
+                                                  </a>
+                                              </div>
+                                              <div class="product-content-wrapper">
+                                                  <div class="product-title-spreed">
+                                                      <h4><a href="#">Maxclon ZPE 54</a></h4>
+                                                      <span>3300 RPM</span>
+                                                  </div>
+                                                  <div class="product-price">
+                                                      <span>INR 2549</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="product-wrapper-bundle">
+                                      <div class="product-wrapper">
+                                          <div class="product-img">
+                                              <a href="#">
+                                                  <img src="assets/img/product/product-3.jpg" alt="">
+                                              </a>
+                                              <div class="product-item-dec">
+                                                  <ul>
+                                                      <li>2019</li>
+                                                      <li>MANUAL</li>
+                                                      <li>PETROL</li>
+                                                      <li>150 CC</li>
+                                                  </ul>
+                                              </div>
+                                              <div class="product-action">
+                                                  <a class="action-plus-2" title="Add To Cart" href="#">
+                                                      <i class=" ti-shopping-cart"></i>
+                                                  </a>
+                                                  <a class="action-cart-2" title="Wishlist" href="#">
+                                                      <i class=" ti-heart"></i>
+                                                  </a>
+                                                  <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                      <i class=" ti-zoom-in"></i>
+                                                  </a>
+                                              </div>
+                                              <div class="product-content-wrapper">
+                                                  <div class="product-title-spreed">
+                                                      <h4><a href="#">Matrio Max</a></h4>
+                                                      <span>4600 RPM</span>
+                                                  </div>
+                                                  <div class="product-price">
+                                                      <span>INR 2549</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="product-wrapper">
+                                          <div class="product-img">
+                                              <a href="#">
+                                                  <img src="assets/img/product/product-6.jpg" alt="">
+                                              </a>
+                                              <div class="product-item-dec">
+                                                  <ul>
+                                                      <li>2019</li>
+                                                      <li>MANUAL</li>
+                                                      <li>PETROL</li>
+                                                      <li>250 CC</li>
+                                                  </ul>
+                                              </div>
+                                              <div class="product-action">
+                                                  <a class="action-plus-2" title="Add To Cart" href="#">
+                                                      <i class=" ti-shopping-cart"></i>
+                                                  </a>
+                                                  <a class="action-cart-2" title="Wishlist" href="#">
+                                                      <i class=" ti-heart"></i>
+                                                  </a>
+                                                  <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                      <i class=" ti-zoom-in"></i>
+                                                  </a>
+                                              </div>
+                                              <div class="product-content-wrapper">
+                                                  <div class="product-title-spreed">
+                                                      <h4><a href="#">Rigoniss Z 1000</a></h4>
+                                                      <span>8000 RPM</span>
+                                                  </div>
+                                                  <div class="product-price">
+                                                      <span>INR 2549</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="product-wrapper-bundle">
+                                      <div class="product-wrapper">
+                                          <div class="product-img">
+                                              <a href="#">
+                                                  <img src="assets/img/product/product-2.jpg" alt="">
+                                              </a>
+                                              <div class="product-item-dec">
+                                                  <ul>
+                                                      <li>2019</li>
+                                                      <li>MANUAL</li>
+                                                      <li>PETROL</li>
+                                                      <li>250 CC</li>
+                                                  </ul>
+                                              </div>
+                                              <div class="product-action">
+                                                  <a class="action-plus-2" title="Add To Cart" href="#">
+                                                      <i class=" ti-shopping-cart"></i>
+                                                  </a>
+                                                  <a class="action-cart-2" title="Wishlist" href="#">
+                                                      <i class=" ti-heart"></i>
+                                                  </a>
+                                                  <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                      <i class=" ti-zoom-in"></i>
+                                                  </a>
+                                              </div>
+                                              <div class="product-content-wrapper">
+                                                  <div class="product-title-spreed">
+                                                      <h4><a href="#">Klager GSX 250 R</a></h4>
+                                                      <span>5500 RPM</span>
+                                                  </div>
+                                                  <div class="product-price">
+                                                      <span>INR 2549</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="product-wrapper">
+                                          <div class="product-img">
+                                              <a href="#">
+                                                  <img src="assets/img/product/product-5.jpg" alt="">
+                                              </a>
+                                              <div class="product-item-dec">
+                                                  <ul>
+                                                      <li>2019</li>
+                                                      <li>MANUAL</li>
+                                                      <li>PETROL</li>
+                                                      <li>350 CC</li>
+                                                  </ul>
+                                              </div>
+                                              <div class="product-action">
+                                                  <a class="action-plus-2" title="Add To Cart" href="#">
+                                                      <i class=" ti-shopping-cart"></i>
+                                                  </a>
+                                                  <a class="action-cart-2" title="Wishlist" href="#">
+                                                      <i class=" ti-heart"></i>
+                                                  </a>
+                                                  <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                      <i class=" ti-zoom-in"></i>
+                                                  </a>
+                                              </div>
+                                              <div class="product-content-wrapper">
+                                                  <div class="product-title-spreed">
+                                                      <h4><a href="#">Maxclon ZPE 54</a></h4>
+                                                      <span>3300 RPM</span>
+                                                  </div>
+                                                  <div class="product-price">
+                                                      <span>INR 2549</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="tab-pane" id="home2">
+                              <div class="product-slider-active owl-carousel">
+                                  <div class="product-wrapper-bundle">
+                                      <div class="product-wrapper mb-30">
+                                          <div class="product-img">
+                                              <a href="#">
+                                                  <img src="assets/img/product/product-6.jpg" alt="">
+                                              </a>
+                                              <div class="product-item-dec">
+                                                  <ul>
+                                                      <li>2019</li>
+                                                      <li>MANUAL</li>
+                                                      <li>PETROL</li>
+                                                      <li>250 CC</li>
+                                                  </ul>
+                                              </div>
+                                              <div class="product-action">
+                                                  <a class="action-plus-2" title="Add To Cart" href="#">
+                                                      <i class=" ti-shopping-cart"></i>
+                                                  </a>
+                                                  <a class="action-cart-2" title="Wishlist" href="#">
+                                                      <i class=" ti-heart"></i>
+                                                  </a>
+                                                  <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                      <i class=" ti-zoom-in"></i>
+                                                  </a>
+                                              </div>
+                                              <div class="product-content-wrapper">
+                                                  <div class="product-title-spreed">
+                                                      <h4><a href="#">Gloriori GSX 250 R</a></h4>
+                                                      <span>6600 RPM</span>
+                                                  </div>
+                                                  <div class="product-price">
+                                                      <span>INR 2549</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="product-wrapper mb-30">
+                                          <div class="product-img">
+                                              <a href="#">
+                                                  <img src="assets/img/product/product-5.jpg" alt="">
+                                              </a>
+                                              <div class="product-item-dec">
+                                                  <ul>
+                                                      <li>2019</li>
+                                                      <li>MANUAL</li>
+                                                      <li>PETROL</li>
+                                                      <li>480 CC</li>
+                                                  </ul>
+                                              </div>
+                                              <div class="product-action">
+                                                  <a class="action-plus-2" title="Add To Cart" href="#">
+                                                      <i class=" ti-shopping-cart"></i>
+                                                  </a>
+                                                  <a class="action-cart-2" title="Wishlist" href="#">
+                                                      <i class=" ti-heart"></i>
+                                                  </a>
+                                                  <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                      <i class=" ti-zoom-in"></i>
+                                                  </a>
+                                              </div>
+                                              <div class="product-content-wrapper">
+                                                  <div class="product-title-spreed">
+                                                      <h4><a href="#">Demonissi Gori</a></h4>
+                                                      <span>6700 RPM</span>
+                                                  </div>
+                                                  <div class="product-price">
+                                                      <span>INR 2549</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="product-wrapper-bundle">
+                                      <div class="product-wrapper mb-30">
+                                          <div class="product-img">
+                                              <a href="#">
+                                                  <img src="assets/img/product/product-4.jpg" alt="">
+                                              </a>
+                                              <div class="product-item-dec">
+                                                  <ul>
+                                                      <li>2019</li>
+                                                      <li>MANUAL</li>
+                                                      <li>PETROL</li>
+                                                      <li>200 CC</li>
+                                                  </ul>
+                                              </div>
+                                              <div class="product-action">
+                                                  <a class="action-plus-2" title="Add To Cart" href="#">
+                                                      <i class=" ti-shopping-cart"></i>
+                                                  </a>
+                                                  <a class="action-cart-2" title="Wishlist" href="#">
+                                                      <i class=" ti-heart"></i>
+                                                  </a>
+                                                  <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                      <i class=" ti-zoom-in"></i>
+                                                  </a>
+                                              </div>
+                                              <div class="product-content-wrapper">
+                                                  <div class="product-title-spreed">
+                                                      <h4><a href="#">Klager GSX 250 R</a></h4>
+                                                      <span>5500 RPM</span>
+                                                  </div>
+                                                  <div class="product-price">
+                                                      <span>INR 2549</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="product-wrapper mb-30">
+                                          <div class="product-img">
+                                              <a href="#">
+                                                  <img src="assets/img/product/product-3.jpg" alt="">
+                                              </a>
+                                              <div class="product-item-dec">
+                                                  <ul>
+                                                      <li>2019</li>
+                                                      <li>MANUAL</li>
+                                                      <li>PETROL</li>
+                                                      <li>150 CC</li>
+                                                  </ul>
+                                              </div>
+                                              <div class="product-action">
+                                                  <a class="action-plus-2" title="Add To Cart" href="#">
+                                                      <i class=" ti-shopping-cart"></i>
+                                                  </a>
+                                                  <a class="action-cart-2" title="Wishlist" href="#">
+                                                      <i class=" ti-heart"></i>
+                                                  </a>
+                                                  <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                      <i class=" ti-zoom-in"></i>
+                                                  </a>
+                                              </div>
+                                              <div class="product-content-wrapper">
+                                                  <div class="product-title-spreed">
+                                                      <h4><a href="#">Maxclon ZPE 54</a></h4>
+                                                      <span>3300 RPM</span>
+                                                  </div>
+                                                  <div class="product-price">
+                                                      <span>INR 2549</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="product-wrapper-bundle">
+                                      <div class="product-wrapper mb-30">
+                                          <div class="product-img">
+                                              <a href="#">
+                                                  <img src="assets/img/product/product-2.jpg" alt="">
+                                              </a>
+                                              <div class="product-item-dec">
+                                                  <ul>
+                                                      <li>2019</li>
+                                                      <li>MANUAL</li>
+                                                      <li>PETROL</li>
+                                                      <li>150 CC</li>
+                                                  </ul>
+                                              </div>
+                                              <div class="product-action">
+                                                  <a class="action-plus-2" title="Add To Cart" href="#">
+                                                      <i class=" ti-shopping-cart"></i>
+                                                  </a>
+                                                  <a class="action-cart-2" title="Wishlist" href="#">
+                                                      <i class=" ti-heart"></i>
+                                                  </a>
+                                                  <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                      <i class=" ti-zoom-in"></i>
+                                                  </a>
+                                              </div>
+                                              <div class="product-content-wrapper">
+                                                  <div class="product-title-spreed">
+                                                      <h4><a href="#">Matrio Max</a></h4>
+                                                      <span>4600 RPM</span>
+                                                  </div>
+                                                  <div class="product-price">
+                                                      <span>INR 2549</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="product-wrapper mb-30">
+                                          <div class="product-img">
+                                              <a href="#">
+                                                  <img src="assets/img/product/product-1.jpg" alt="">
+                                              </a>
+                                              <div class="product-item-dec">
+                                                  <ul>
+                                                      <li>2019</li>
+                                                      <li>MANUAL</li>
+                                                      <li>PETROL</li>
+                                                      <li>250 CC</li>
+                                                  </ul>
+                                              </div>
+                                              <div class="product-action">
+                                                  <a class="action-plus-2" title="Add To Cart" href="#">
+                                                      <i class=" ti-shopping-cart"></i>
+                                                  </a>
+                                                  <a class="action-cart-2" title="Wishlist" href="#">
+                                                      <i class=" ti-heart"></i>
+                                                  </a>
+                                                  <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                      <i class=" ti-zoom-in"></i>
+                                                  </a>
+                                              </div>
+                                              <div class="product-content-wrapper">
+                                                  <div class="product-title-spreed">
+                                                      <h4><a href="#">Rigoniss Z 1000</a></h4>
+                                                      <span>8000 RPM</span>
+                                                  </div>
+                                                  <div class="product-price">
+                                                      <span>INR 2549</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="product-wrapper-bundle">
+                                      <div class="product-wrapper mb-30">
+                                          <div class="product-img">
+                                              <a href="#">
+                                                  <img src="assets/img/product/product-2.jpg" alt="">
+                                              </a>
+                                              <div class="product-item-dec">
+                                                  <ul>
+                                                      <li>2019</li>
+                                                      <li>MANUAL</li>
+                                                      <li>PETROL</li>
+                                                      <li>250 CC</li>
+                                                  </ul>
+                                              </div>
+                                              <div class="product-action">
+                                                  <a class="action-plus-2" title="Add To Cart" href="#">
+                                                      <i class=" ti-shopping-cart"></i>
+                                                  </a>
+                                                  <a class="action-cart-2" title="Wishlist" href="#">
+                                                      <i class=" ti-heart"></i>
+                                                  </a>
+                                                  <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                      <i class=" ti-zoom-in"></i>
+                                                  </a>
+                                              </div>
+                                              <div class="product-content-wrapper">
+                                                  <div class="product-title-spreed">
+                                                      <h4><a href="#">Klager GSX 250 R</a></h4>
+                                                      <span>5500 RPM</span>
+                                                  </div>
+                                                  <div class="product-price">
+                                                      <span>INR 2549</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="product-wrapper mb-30">
+                                          <div class="product-img">
+                                              <a href="#">
+                                                  <img src="assets/img/product/product-5.jpg" alt="">
+                                              </a>
+                                              <div class="product-item-dec">
+                                                  <ul>
+                                                      <li>2019</li>
+                                                      <li>MANUAL</li>
+                                                      <li>PETROL</li>
+                                                      <li>350 CC</li>
+                                                  </ul>
+                                              </div>
+                                              <div class="product-action">
+                                                  <a class="action-plus-2" title="Add To Cart" href="#">
+                                                      <i class=" ti-shopping-cart"></i>
+                                                  </a>
+                                                  <a class="action-cart-2" title="Wishlist" href="#">
+                                                      <i class=" ti-heart"></i>
+                                                  </a>
+                                                  <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                      <i class=" ti-zoom-in"></i>
+                                                  </a>
+                                              </div>
+                                              <div class="product-content-wrapper">
+                                                  <div class="product-title-spreed">
+                                                      <h4><a href="#">Maxclon ZPE 54</a></h4>
+                                                      <span>3300 RPM</span>
+                                                  </div>
+                                                  <div class="product-price">
+                                                      <span>INR 2549</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>-->
+                  </div>
+              </div> <!-- End of div product-area pb-190 -->
+        
+        <div class="latest-product-area pt-205 pb-145 bg-img" style="background-image: url(assets/img/banner/banner-4.jpg)">
+                  <div class="container-fluid">
+                      <div class="latest-product-slider owl-carousel">
+                          <!--<div class="single-latest-product slider-animated-2">
+                              <div class="row">
+                                  <div class="col-lg-7 col-md-12 col-12">
+                                      <div class="latest-product-img">
+                                          <img class="animated" src="assets/img/banner/banner-2.png" alt="image">
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-5 col-md-12 col-12">
+                                      <div class="latest-product-content">
+                                          <h2 class="animated">LATEST OFFER <br>FOR POPULAR BIKES</h2>
+                                          <p class="animated"><span>ROADIES</span> the most latgest bike store in the wold can serve you latest            qulity of motorcycle also you can sell here your motorcycle it quo minus iduod maxie placeat facere possimus, omnis voluptas assumenda est, omnis dolor llendus. Temporibus autem quibusdam </p>
+                                          <div class="latest-price">
+                                              <h3 class="animated">NOW AT <span>$1250</span></h3>
+                                              <span class="animated">35% DISCOUNT</span>
+                                          </div>
+                                          <div class="latext-btn">
+                                              <a class="animated" href="#">SELECT A BIKE</a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>-->
+                          <div class="single-latest-product slider-animated-2">
+                              <div class="row">
+                                  <div class="col-lg-7 col-col-12 col-12">
+                                      <div class="latest-product-img">
+                                          <img class="animated" src="assets/img/banner/banner-3.png" alt="image">
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-5 col-col-12 col-12">
+                                      <div class="latest-product-content">
+                                          <h2 class="animated">LATEST OFFER <br>FOR POPULAR BIKES</h2>
+                                          <p class="animated"><span>ROADIES</span> the most latgest bike store in the wold can serve you latest            qulity of motorcycle also you can sell here your motorcycle it quo minus iduod maxie placeat facere possimus, omnis voluptas assumenda est, omnis dolor llendus. Temporibus autem quibusdam </p>
+                                          <div class="latest-price">
+                                              <h3 class="animated">NOW AT <span>$1250</span></h3>
+                                              <span class="animated">35% DISCOUNT</span>
+                                          </div>
+                                          <div class="latext-btn">
+                                              <a class="animated" href="#">SELECT A BIKE</a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div> <!-- End of div latest-product-area pt-205 pb-145 bg-img -->
+        
+        <div class="accessories-area pt-152 pb-130">
+                  <div class="container-fluid">
+                      <div class="section-title section-fluid text-center mb-60">
+                          <h2>ACCESSORIES</h2>
+                          <p><span>ROADIES</span> the most latgest bike store in the wold can serve you latest            qulity of motorcycle also you can sell here your motorcycle</p>
+                      </div>
+
+                      <div class="container text-center">
+                            
+                            <div class="row">
+                              <div class="col-sm-4">
+                                    <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#">
+                                                    <img src="assets/img/product/product-7.jpg" alt="">
+                                                </a>
+                                                <div class="product-action">
+                                                    <a class="action-plus-2" title="Add To Cart" href="#">
+                                                        <i class=" ti-shopping-cart"></i>
+                                                    </a>
+                                                    <a class="action-cart-2" title="Wishlist" href="#">
+                                                        <i class=" ti-heart"></i>
+                                                    </a>
+                                                    <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                        <i class=" ti-zoom-in"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="product-content-wrapper-2">
+                                                    <div class="product-title-price-2 text-center">
+                                                        <span>Price: INR 120</span>
+                                                        <h4><a href="#">Aerion Carbon Helmet</a></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                                
+                              </div>
+                              <div class="col-sm-4">
+                                    <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#">
+                                                    <img src="assets/img/product/product-8.jpg" alt="">
+                                                </a>
+                                                <div class="product-action">
+                                                    <a class="action-plus-2" title="Add To Cart" href="#">
+                                                        <i class=" ti-shopping-cart"></i>
+                                                    </a>
+                                                    <a class="action-cart-2" title="Wishlist" href="#">
+                                                        <i class=" ti-heart"></i>
+                                                    </a>
+                                                    <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                        <i class=" ti-zoom-in"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="product-content-wrapper-2">
+                                                    <div class="product-title-price-2 text-center">
+                                                        <span>Price: INR 180</span>
+                                                        <h4><a href="#">Reckles Jacket</a></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                              </div>
+                              <div class="col-sm-4">
+                                    <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#">
+                                                    <img src="assets/img/product/product-9.jpg" alt="">
+                                                </a>
+                                                <div class="product-action">
+                                                    <a class="action-plus-2" title="Add To Cart" href="#">
+                                                        <i class=" ti-shopping-cart"></i>
+                                                    </a>
+                                                    <a class="action-cart-2" title="Wishlist" href="#">
+                                                        <i class=" ti-heart"></i>
+                                                    </a>
+                                                    <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                        <i class=" ti-zoom-in"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="product-content-wrapper-2">
+                                                    <div class="product-title-price-2 text-center">
+                                                        <span>Price: INR 25</span>
+                                                        <h4><a href="#">Softy Original Glove</a></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+
+                     <!-- <div class="accessories-wrapper">
+                          <div class="product-accessories-active owl-carousel">
+                              <div class="product-wrapper">
+                                  <div class="product-img">
+                                      <a href="#">
+                                          <img src="assets/img/product/product-7.jpg" alt="">
+                                      </a>
+                                      <div class="product-action">
+                                          <a class="action-plus-2" title="Add To Cart" href="#">
+                                              <i class=" ti-shopping-cart"></i>
+                                          </a>
+                                          <a class="action-cart-2" title="Wishlist" href="#">
+                                              <i class=" ti-heart"></i>
+                                          </a>
+                                          <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                              <i class=" ti-zoom-in"></i>
+                                          </a>
+                                      </div>
+                                      <div class="product-content-wrapper-2">
+                                          <div class="product-title-price-2 text-center">
+                                              <span>Price: INR 120</span>
+                                              <h4><a href="#">Aerion Carbon Helmet</a></h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="product-wrapper">
+                                  <div class="product-img">
+                                      <a href="#">
+                                          <img src="assets/img/product/product-8.jpg" alt="">
+                                      </a>
+                                      <div class="product-action">
+                                          <a class="action-plus-2" title="Add To Cart" href="#">
+                                              <i class=" ti-shopping-cart"></i>
+                                          </a>
+                                          <a class="action-cart-2" title="Wishlist" href="#">
+                                              <i class=" ti-heart"></i>
+                                          </a>
+                                          <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                              <i class=" ti-zoom-in"></i>
+                                          </a>
+                                      </div>
+                                      <div class="product-content-wrapper-2">
+                                          <div class="product-title-price-2 text-center">
+                                              <span>Price: INR 180</span>
+                                              <h4><a href="#">Reckles Jacket</a></h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="product-wrapper">
+                                  <div class="product-img">
+                                      <a href="#">
+                                          <img src="assets/img/product/product-9.jpg" alt="">
+                                      </a>
+                                      <div class="product-action">
+                                          <a class="action-plus-2" title="Add To Cart" href="#">
+                                              <i class=" ti-shopping-cart"></i>
+                                          </a>
+                                          <a class="action-cart-2" title="Wishlist" href="#">
+                                              <i class=" ti-heart"></i>
+                                          </a>
+                                          <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                              <i class=" ti-zoom-in"></i>
+                                          </a>
+                                      </div>
+                                      <div class="product-content-wrapper-2">
+                                          <div class="product-title-price-2 text-center">
+                                              <span>Price: INR 25</span>
+                                              <h4><a href="#">Softy Original Glove</a></h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="product-wrapper">
+                                  <div class="product-img">
+                                      <a href="#">
+                                          <img src="assets/img/product/product-10.jpg" alt="">
+                                      </a>
+                                      <div class="product-action">
+                                          <a class="action-plus-2" title="Add To Cart" href="#">
+                                              <i class=" ti-shopping-cart"></i>
+                                          </a>
+                                          <a class="action-cart-2" title="Wishlist" href="#">
+                                              <i class=" ti-heart"></i>
+                                          </a>
+                                          <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                              <i class=" ti-zoom-in"></i>
+                                          </a>
+                                      </div>
+                                      <div class="product-content-wrapper-2">
+                                          <div class="product-title-price-2 text-center">
+                                              <span>Price: INR 140</span>
+                                              <h4><a href="#">Flicky Traco Boot</a></h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="product-wrapper">
+                                  <div class="product-img">
+                                      <a href="#">
+                                          <img src="assets/img/product/product-11.jpg" alt="">
+                                      </a>
+                                      <div class="product-action">
+                                          <a class="action-plus-2" title="Add To Cart" href="#">
+                                              <i class=" ti-shopping-cart"></i>
+                                          </a>
+                                          <a class="action-cart-2" title="Wishlist" href="#">
+                                              <i class=" ti-heart"></i>
+                                          </a>
+                                          <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                              <i class=" ti-zoom-in"></i>
+                                          </a>
+                                      </div>
+                                      <div class="product-content-wrapper-2">
+                                          <div class="product-title-price-2 text-center">
+                                              <span>Price: INR 150</span>
+                                              <h4><a href="#">Flicky Traco Boot</a></h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="product-wrapper">
+                                  <div class="product-img">
+                                      <a href="#">
+                                          <img src="assets/img/product/product-7.jpg" alt="">
+                                      </a>
+                                      <div class="product-action">
+                                          <a class="action-plus-2" title="Add To Cart" href="#">
+                                              <i class=" ti-shopping-cart"></i>
+                                          </a>
+                                          <a class="action-cart-2" title="Wishlist" href="#">
+                                              <i class=" ti-heart"></i>
+                                          </a>
+                                          <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                              <i class=" ti-zoom-in"></i>
+                                          </a>
+                                      </div>
+                                      <div class="product-content-wrapper-2">
+                                          <div class="product-title-price-2 text-center">
+                                              <span>Price: INR 150</span>
+                                              <h4><a href="#">Aerion Carbon Helmet</a></h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="product-wrapper">
+                                  <div class="product-img">
+                                      <a href="#">
+                                          <img src="assets/img/product/product-8.jpg" alt="">
+                                      </a>
+                                      <div class="product-action">
+                                          <a class="action-plus-2" title="Add To Cart" href="#">
+                                              <i class=" ti-shopping-cart"></i>
+                                          </a>
+                                          <a class="action-cart-2" title="Wishlist" href="#">
+                                              <i class=" ti-heart"></i>
+                                          </a>
+                                          <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                              <i class=" ti-zoom-in"></i>
+                                          </a>
+                                      </div>
+                                      <div class="product-content-wrapper-2">
+                                          <div class="product-title-price-2 text-center">
+                                              <span>Price: INR 160</span>
+                                              <h4><a href="#">Reckles Jacket</a></h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="product-wrapper">
+                                  <div class="product-img">
+                                      <a href="#">
+                                          <img src="assets/img/product/product-9.jpg" alt="">
+                                      </a>
+                                      <div class="product-action">
+                                          <a class="action-plus-2" title="Add To Cart" href="#">
+                                              <i class=" ti-shopping-cart"></i>
+                                          </a>
+                                          <a class="action-cart-2" title="Wishlist" href="#">
+                                              <i class=" ti-heart"></i>
+                                          </a>
+                                          <a class="action-reload" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                              <i class=" ti-zoom-in"></i>
+                                          </a>
+                                      </div>
+                                      <div class="product-content-wrapper-2">
+                                          <div class="product-title-price-2 text-center">
+                                              <span>Price: INR 120</span>
+                                              <h4><a href="#">Aerion Carbon Helmet</a></h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>-->
+                  </div> 
+              </div> <!-- End of div accessories-area pt-152 pb-130 -->
+        
+         <div class="testimonial-area">
+                  <div class="container">
+                      <div class="section-title-2 section-title-position">
+                          <h2>OUR CLIENTS REVIEW</h2>
+                      </div>
+                      <div class="testimonial-active owl-carousel">
+                          <div class="single-testimonial">
+                              <div class="row">
+                                  <div class="col-lg-5">
+                                      <div class="testimonial-img pl-75">
+                                          <img alt="image" src="assets/img/team/testimonial-1.jpg">
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-7">
+                                      <div class="testimonial-content">
+                                          <div class="testimonial-dec">
+                                              <p><span>ROADIES</span> the most latgest bike store in the wold can serve you latest  qulity of motorcycle also you can sell here your motorcycle it quo minus iduod maxie placeat facere possimus, omnis voluptas assumenda est, omnis dolor llendus. Temporibus autem quibusdam quoten</p>
+                                          </div>
+                                          <div class="name-designation">
+                                              <h4>Rannvijjay</h4>
+                                              <span>COO, PUNJAB</span>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                         <!-- <div class="single-testimonial">
+                              <div class="row">
+                                  <div class="col-lg-5 col-md-12 col-12">
+                                      <div class="testimonial-img pl-75">
+                                          <img alt="image" src="assets/img/team/testimonial-2.png">
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-7 col-md-12 col-12">
+                                      <div class="testimonial-content">
+                                          <div class="testimonial-dec">
+                                              <p><span>ROADIES</span> Lorem ipsum dolor sit amet, consectetur adipisicing , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat. Duis dolor in reprehenderit.</p>
+                                          </div>
+                                          <div class="name-designation">
+                                              <h4>Raghu</h4>
+                                              <span>CEO, SEASON</span>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>-->
+                      </div>
+                  </div>
+        </div><!-- End of div testimonial-area -->
+        
+        <div class="blog-area pt-150 pb-110">
+                  <div class="container">
+                      <div class="section-title text-center mb-60">
+                          <h2>BLOG POST</h2>
+                          <p><span>ROADIES</span> the most latgest bike store in the wold can serve you latest            qulity of motorcycle also you can sell here your motorcycle</p>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-4 col-md-6">
+                              <div class="blog-hm-wrapper mb-40">
+                                  <div class="blog-img">
+                                      <a routerLink="blog-details"><img src="assets/img/blog/blog-hm-1.jpg" alt="image"></a>
+                                      <div class="blog-date">
+                                          <h4>24 August, 2019</h4>
+                                      </div>
+                                      <div class="blog-hm-social">
+                                          <ul>
+                                              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="blog-hm-content">
+                                      <h3><a routerLink="blog-details">Sports Motorbike for play in desert </a></h3>
+                                      <p><span>ROADIES</span> the most latgest bike store in the wold can serve you latest qulity of motorcycle also you can sell here your motorcycle </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                              <div class="blog-hm-wrapper mb-40">
+                                  <div class="blog-img">
+                                      <a routerLink="blog-details"><img src="assets/img/blog/blog-hm-2.jpg" alt="image"></a>
+                                      <div class="blog-date">
+                                          <h4>22 August, 2019</h4>
+                                      </div>
+                                      <div class="blog-hm-social">
+                                          <ul>
+                                              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="blog-hm-content">
+                                      <h3><a routerLink="blog-details">Motorbike Racing at October</a></h3>
+                                      <p><span>ROADIES</span> the most latgest bike store in the wold can serve you latest qulity of motorcycle also you can sell here your motorcycle </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                              <div class="blog-hm-wrapper mb-40">
+                                  <div class="blog-img">
+                                      <a routerLink="blog-details"><img src="assets/img/blog/blog-hm-3.jpg" alt="image"></a>
+                                      <div class="blog-date">
+                                          <h4>20 August, 2019</h4>
+                                      </div>
+                                      <div class="blog-hm-social">
+                                          <ul>
+                                              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="blog-hm-content">
+                                      <h3><a routerLink="blog-details">Latest Motorbike Release this Year </a></h3>
+                                      <p><span>ROADIES</span> the most latgest bike store in the wold can serve you latest qulity of motorcycle also you can sell here your motorcycle  </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div> <!-- End of div blog-area pt-150 pb-110 -->
+        
+        <div class="newsletter-area">
+                  <div class="container">
+                      <div class="newsletter-wrapper-all theme-bg-2">
+                          <div class="row">
+                              <div class="col-lg-5 col-12 col-md-12">
+                                  <div class="newsletter-img bg-img" style="background-image: url(assets/img/banner/newsletter-bg.png)">
+                                      <img alt="image" src="assets/img/team/newsletter-img.png">
+                                  </div>
+                              </div>
+                              <div class="col-lg-7 col-12 col-md-12">
+                                  <div class="newsletter-wrapper text-center">
+                                      <div class="newsletter-title">
+                                          <h3>Subscribe our newsletter</h3>
+                                      </div>
+                                      <div id="mc_embed_signup" class="subscribe-form">
+                                          <form action="#" method="post" id="#" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                              <div id="mc_embed_signup_scroll" class="mc-form">
+                                                  <input type="email" value="" name="EMAIL" class="email" placeholder="Enter your email here..." required>
+                                                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                                  <div class="mc-news" aria-hidden="true"><input type="text" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" tabindex="-1" value=""></div>
+                                                  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                              </div>
+                                          </form>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>  <!-- End of div newsletter-area -->
+        
+        <footer>
+                  <div class="footer-top pt-210 pb-98 theme-bg">
+                      <div class="container">
+                         <div class="row">
+                              <div class="col-lg-3 col-md-6 col-12">
+                                  <div class="footer-widget mb-30">
+                                      <div class="footer-logo">
+                                          <a href="">
+                                              <!-- <img src="assets/img/logo/2.png" alt=""> --> ROADIES
+                                          </a>
+                                      </div>
+                                      <div class="footer-about">
+                                          <p><span>ROADIES</span> the most latgest bike store in the wold can serve you latest ulity of motorcycle soucan sell here your motorcycle here </p>
+                                          <div class="footer-support">
+                                              <h5>FOR SUPPORT</h5>
+                                              <span> 01245 658 698 (Toll Free)</span>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-3 col-md-6 col-12">
+                                  <div class="footer-widget mb-30 pl-60">
+                                      <div class="footer-widget-title">
+                                          <h3>QUICK LINK</h3>
+                                      </div>
+                                      <div class="quick-links">
+                                          <ul>
+                                              <li><a routerLink="about_us">About us</a></li>
+                                              <li><a href="#">Service</a></li>
+                                              <li><a href="#">Inventory</a></li>
+                                              <li><a href="#">Shop</a></li>
+                                              <li><a href="#">Blog</a></li>
+                                              <li><a href="#">Conditions</a></li>
+                                              <li><a routerLink="contact">Contact</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-3 col-md-6 col-12">
+                                  <div class="footer-widget mb-30">
+                                      <div class="footer-widget-title">
+                                          <h3>LATEST TWEET</h3>
+                                      </div>
+                                      <div class="food-widget-content pr-30">
+                                          <div class="single-tweet">
+                                              <p><a href="#">@Bani,</a> the most latgest bike store in the wold can serve you 
+  10 min ago</p>
+                                          </div>
+                                          <div class="single-tweet">
+                                              <p><a href="#">@Rannvijjay,</a> the most latgest bike store in the wold can serve you 
+  10 min ago</p>
+                                          </div>
+                                          <div class="single-tweet">
+                                              <p><a href="#">@Raghu,</a> the most latgest bike store in the wold can serve you 
+  10 min ago</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-3 col-md-6 col-12">
+                                  <div class="footer-widget mb-30">
+                                      <div class="footer-widget-title">
+                                          <h3>CONTACT INFO</h3>
+                                      </div>
+                                      <div class="food-info-wrapper">
+                                          <div class="food-address">
+                                              <div class="food-info-title">
+                                                  <span>Address</span>
+                                              </div>
+                                              <div class="food-info-content">
+                                                  <p>276 Kolkata Nogor, 4th folor, Main Tower, Main Town, Kolkata</p>
+                                              </div>
+                                          </div>
+                                          <div class="food-address">
+                                              <div class="food-info-title">
+                                                  <span>Phone</span>
+                                              </div>
+                                              <div class="food-info-content">
+                                                  <p>+090 9999999999</p>
+                                                  <p>+090 9999999999</p>
+                                              </div>
+                                          </div>
+                                          <div class="food-address">
+                                              <div class="food-info-title">
+                                                  <span>Web</span>
+                                              </div>
+                                              <div class="food-info-content">
+                                                  <a href="#">info@roadies.com</a>
+                                                  <a href="#">www.roadies.com</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="footer-bottom ptb-35 black-bg">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-md-8 col-12">
+                                  <div class="copyright">
+                                      <p>©Copyright, 2019 All Rights Reserved by <span style="color:#ffb52f" >Passionate Coders</span></p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 col-12">
+                                  <div class="footer-payment-method">
+                                      <a href="#"><img alt="" src="assets/img/icon-img/payment.png"></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </footer>
+          
+          
+    
+    
+    </div><!-- End of div wrapper -->
+    
+      <!-- all js here 
+      <script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
+      <script src="assets/js/popper.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/isotope.pkgd.min.js"></script>
+      <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+      <script src="assets/js/jquery.counterup.min.js"></script>
+      <script src="assets/js/waypoints.min.js"></script>
+      
+      <script src="assets/js/owl.carousel.min.js"></script>
+      <script src="assets/js/plugins.js"></script>
+      <script src="assets/js/main.js"></script> -->
+
+      
+        
+      </body>
+        </html>
+
+        
+
